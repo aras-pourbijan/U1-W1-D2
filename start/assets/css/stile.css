@@ -1,20 +1,30 @@
 /* IMPOSTAZIONI GENERALI */
-html {font-size: 62.5%;}
-body { 
-    font-family: Poppins, 'Helvetica Neue', sans-serif;
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Poppins, "Helvetica Neue", sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
     padding: 15px;
-    background-image: url('../img/sfondo.png');
+    background-image: url("../img/sfondo.png");
     background-position: center center;
 }
-* {box-sizing: border-box;}
-hr {display: none;} /* rimuove l'elemento */
+* {
+    box-sizing: border-box;
+}
+hr {
+    display: none;
+} /* rimuove l'elemento */
 
 /* HEADER */
 header {
-    background: rgb(0,160,198);
-    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    background: rgb(0, 160, 198);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 160, 198, 1) 0%,
+        rgba(3, 109, 134, 1) 68%
+    );
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -22,35 +32,40 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    position: sticky;
+    top: -25px;
 }
 header div img {
     margin-bottom: 20px;
 }
 header nav ul {
     margin: 0;
+    position: relative;
 }
 header nav li {
     list-style: none;
+    padding-inline: 5px;
 }
 header nav li a {
     color: white;
     text-decoration: none;
 }
 header nav li a:hover {
-    color: red;
+    color: rgb(179, 47, 40);
+    font-size: 140%;
 }
-header nav li a::before {
+/* header nav li a::before {
     content: "\22c6\0020";
-}
+} */
 
 /* MAIN */
 main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
     padding: 2em 1em;
-    margin-bottom:1.5em ;
+    margin-bottom: 1.5em;
 }
-section { 
+section {
     background-color: #e3e3e3;
     padding: 1em;
     margin-bottom: 2em;
@@ -71,17 +86,23 @@ h1 {
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-p, address, ul, ol, dl, blockquote {
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
     margin-bottom: 1.2em;
 }
 h1 + p {
     color: #a0a0a0;
 }
-ul, ol {
+ul,
+ol {
     margin-left: 2em;
 }
 a {
-    color: #00A0C6;
+    color: #00a0c6;
     font-weight: bold;
 }
 strong {
@@ -112,7 +133,8 @@ thead tr {
     background-color: #3f6bca;
     color: #ffffff;
 }
-th, td {
+th,
+td {
     padding: 12px 15px;
     vertical-align: bottom;
     text-align: center;
@@ -164,17 +186,72 @@ aside div p:last-child {
     text-align: right;
 }
 
-
 /* FOOTER */
 footer {
-    background: rgb(53,53,53);
-    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    background: rgb(53, 53, 53);
+    background: linear-gradient(
+        0deg,
+        rgba(53, 53, 53, 1) 0%,
+        rgba(5, 85, 103, 1) 68%
+    );
     box-shadow: 0 3px 3px #444;
     color: #f0f0f0;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
     font-size: 1.2rem;
 }
 footer a {
     color: fuchsia;
+}
+
+#text-image {
+    float: left;
+    display: inline-block;
+    border: 4px solid #3f6bca;
+    align-items: center;
+    padding-top: 3px;
+
+    outline: 5px solid magenta;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.totop,
+.social {
+    position: fixed;
+}
+
+.totop a,
+.social a:hover {
+    right: 5;
+}
+.totop {
+    bottom: 20vh;
+    right: -3px;
+}
+.social {
+    top: 34vh;
+    right: -3px;
+}
+.totop a,
+.social a {
+    font-size: 3rem;
+    display: block;
+}
+
+.totop a {
+    color: violet;
+}
+.social a {
+    color: rgb(34, 82, 255);
+}
+.totop .far,
+.social .far {
+    background: rgb(255 255 255/ 40%);
+    border-radius: 5px;
+    padding: 0%;
+    margin: 0%;
 }
