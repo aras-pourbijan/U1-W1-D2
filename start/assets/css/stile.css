@@ -219,39 +219,23 @@ nav li {
     display: inline-block;
 }
 
-.totop,
-.social {
+.fix--box {
+    width: 30px;
+    height: auto;
     position: fixed;
+    bottom: 12vh;
+    right: 0;
 }
 
-.totop a,
-.social a:hover {
-    right: 5;
-}
-.totop {
-    bottom: 20vh;
-    right: -3px;
-}
-.social {
-    top: 34vh;
-    right: -3px;
-}
-.totop a,
-.social a {
-    font-size: 3rem;
-    display: block;
+.fix--box > * {
+    font-size: 2.2em;
 }
 
-.totop a {
-    color: violet;
+.fix--link3 a {
+    color: magenta;
 }
-.social a {
-    color: rgb(34, 82, 255);
-}
-.totop .far,
-.social .far {
-    background: rgb(255 255 255/ 40%);
-    border-radius: 5px;
-    padding: 0%;
-    margin: 0%;
+
+.fix--box a:hover {
+    color: rgb(232, 166, 0);
+    font-size: 115%;
 }
